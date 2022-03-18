@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: sans-serif;
+  line-height: 1.4;
+  position: relative;
+}
+
+.sale-text {
+  font-size: 13px;
+  color: #fff;
+  background-color: #ec2f2f;
+  padding: 7px 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+  top: -17px;
+  left: -38px;
+}
+
+.product-title {
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #f7f7f7;
+  margin-bottom: 10px;
+  padding: 15px;
+}
+
+.price {
+  font-size: 25px;
+}
+
+.shipping {
+  font-size: 12px;
+  color: #777;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.details {
+  margin-bottom: 20px;
+}
+
+.products {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.details-list {
+  list-style: square;
+  margin-left: 30px;
+}
+
+.details-list li {
+  padding-bottom: 10px;
+}
+.add-cart {
+  color: white;
+  border: none;
+  background-color: black;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 100%;
+  border-top: 5px solid black;
+  padding: 10px;
+}
+
+.add-cart:hover {
+  background-color: white;
+  color: black;
+}
+
+.more-info:link,
+.more-info:visited {
+  color: black;
+  /* the only margin are not work, because the links are inline so we will add inline-block property 
+  to achieve the margin as you want..  */
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.more-info:hover,
+.more-info:active {
+  text-decoration: none;
+}
+
+.product {
+  width: 825px;
+  margin: 50px auto;
+  border: 5px solid black;
+  position: relative;
+}
+
+.color {
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.red-color {
+  background-color: red;
+}
+.blue-color {
+  background-color: #3981d3;
+}
+.orange-color {
+  background-color: orange;
+}
+.black-color {
+  background-color: black;
+}
+.green-color {
+  background-color: green;
+}
+.brown-color {
+  background-color: brown;
+}
