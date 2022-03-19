@@ -9,12 +9,12 @@
   </head>
   <body>
     <div class="container">
-      <header class="main-header">
+      <header class="main-header clear-fix">
         <h1>📘 The Code Magazine</h1>
         <nav>
           <a href="blog.html" target="_blank">Blog</a>
           <a href="#">Challeges</a>
-          <a href="#">Flexbox</a>
+          <a href="flexbox.html">Flexbox</a>
           <a href="#">CSS Grid</a>
           <a href="#">Examples</a>
         </nav>
@@ -22,7 +22,7 @@
         <button class="like-button">&#129505; Like</button>
       </header>
 
-      <article>
+      <article class="article-container">
         <header class="post-header">
           <h2 class="blog-title">The Basic Language of Web: HTML</h2>
           <img
@@ -30,9 +30,10 @@
             alt="Headshot of naimat"
             width="60"
             height="60"
+            class="author-img"
           />
 
-          <p id="author">
+          <p class="author">
             Posted by <strong>Naimat Ullah</strong> on Sunday, August 22nd 2021
           </p>
 
@@ -98,7 +99,7 @@
         <p>Hopefully you learned something new here. See you next time!...</p>
       </article>
 
-      <aside>
+      <aside class="related">
         <h4>Related Posts</h4>
         <ul class="related-list">
           <li>
@@ -107,7 +108,8 @@
               alt="related pic 1"
               height="100"
               width="100"
-            /><a href="#">How to Learn Web Development</a>
+            />
+            <a href="#">How to Learn Web Development</a>
             <p class="related-author">By Naimat Ullah</p>
           </li>
           <li>

@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 /* LARGE SELECTOR */
 body {
@@ -14,7 +15,7 @@ body {
 }
 
 .container {
-  width: 800px;
+  width: 1200px;
   margin: 0 auto;
 
   position: relative;
@@ -24,17 +25,18 @@ body {
   background-color: #f7f7f7;
   padding: 20px 40px;
   margin-bottom: 60px;
-  height: 80px;
+  height: 70px;
 }
 nav {
   margin-top: 10px;
   text-align: center;
   /* text-align used in parent class */
+  float: right;
 }
 nav a:link {
   font-size: 22px;
   padding: 10px;
-  display: inline-block;
+  /* display: inline-block; */
 }
 .like-button {
   font-size: 22px;
@@ -52,21 +54,17 @@ nav a:link {
 }
 
 .post-img {
-  width: 100%;
+  width: 800px;
   height: auto;
-}
-article {
-  margin-bottom: 50px;
 }
 
 aside {
   background-color: #f7f7f7;
-  border-top: 5px solid #1098ad;
+  border-top: 5px solid #749499;
   border-bottom: 5px solid #1098ad;
   padding-top: 50px;
   padding-bottom: 50px;
-  padding: 50px 0;
-  width: 500px;
+  padding: 50px 20px;
 }
 
 /* SMALL SELECTOR */
@@ -124,6 +122,7 @@ li {
 h4 {
   font-size: 25px;
   text-align: center;
+  margin-bottom: 40px;
 }
 
 h3 {
@@ -140,10 +139,16 @@ li:last-child {
 li:first-child {
   font-weight: bold;
 }
-
-#author {
+.author-img {
+  float: left;
+  margin-bottom: 20px;
+}
+.author {
   font-style: italic;
   font-size: 18px;
+  float: left;
+  margin-left: 20px;
+  margin-top: 20px;
 }
 
 #copyright {
@@ -156,8 +161,13 @@ li:first-child {
 
 .related-list {
   list-style: none;
+  margin-left: 0;
+  font-weight: bold;
 }
 
+.related {
+  margin-left: 0;
+}
 /* li:first-child {
   font-weight: bold;
 } */
@@ -199,3 +209,31 @@ a:active {
 h3 + p::first-line {
   color: red;
 } */
+
+.main-header h1 {
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+article {
+  width: 825px;
+  float: left;
+}
+
+aside {
+  width: 300px;
+  float: right;
+}
+
+footer {
+  clear: both;
+}
+
+.clear-fix::before {
+  clear: both;
+  content: "";
+  display: block;
+}
